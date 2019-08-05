@@ -20,14 +20,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.eclipse.ee4j</groupId>
-        <artifactId>project</artifactId>
-        <version>1.0.5</version>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>35</version>
     </parent>
-
-    <groupId>jakarta.ejb</groupId>
-    <artifactId>jakarta.ejb-api</artifactId>
-    <version>3.2.6-SNAPSHOT</version>
+    <groupId>org.jboss.spec.javax.ejb</groupId>
+    <artifactId>jboss-ejb-api_3.2_spec</artifactId>
+    <version>2.0.0.CR1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <extension.name>javax.ejb</extension.name>
@@ -78,12 +78,12 @@
         <url>https://github.com/eclipse-ee4j/ejb-api/issues</url>
     </issueManagement>
     <scm>
-        <connection>scm:git:ssh://git@github.com/eclipse-ee4j/ejb-api.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/eclipse-ee4j/ejb-api.git</developerConnection>
-        <url>https://github.com/eclipse-ee4j/ejb-api</url>
+        <connection>scm:git:ssh://git@github.com/jboss/jboss-jakarta-ejb-api_spec.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/jboss/jboss-jakarta-ejb-api_spec.git</developerConnection>
+        <url>https://github.com/jboss/jboss-jakarta-ejb-api_spec</url>
       <tag>HEAD</tag>
   </scm>
-  
+
     <build>
 
         <resources>
@@ -186,6 +186,7 @@
                     <target>1.6</target>
                </configuration>
             </plugin>
+<!--
             <plugin>
                 <groupId>org.glassfish.build</groupId>
                 <artifactId>spec-version-maven-plugin</artifactId>
@@ -208,6 +209,7 @@
                     </execution>
                 </executions>
             </plugin>
+-->
             <plugin>
                 <groupId>org.glassfish.build</groupId>
                 <artifactId>glassfishbuild-maven-plugin</artifactId>
