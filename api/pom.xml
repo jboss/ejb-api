@@ -171,14 +171,9 @@
                         </manifestEntries>
                     </archive>
                     <instructions>
-                        <Bundle-Version>${spec.bundle.version}</Bundle-Version>
-                        <Bundle-SymbolicName>${spec.bundle.symbolic-name}</Bundle-SymbolicName>
                         <Extension-Name>${spec.extension.name}</Extension-Name>
                         <Implementation-Version>${spec.implementation.version}</Implementation-Version>
                         <Specification-Version>${spec.specification.version}</Specification-Version>
-                        <Bundle-Description>
-                            Jakarta Enterprise Beans ${spec.version} API Design Specification
-                        </Bundle-Description>
                         <Specification-Vendor>Eclipse Foundation</Specification-Vendor>
                         <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
                         <Implementation-Vendor-Id>org.eclipse.ee4j.ejb</Implementation-Vendor-Id>
