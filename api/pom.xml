@@ -37,9 +37,10 @@
         <findbugs.exclude>exclude.xml</findbugs.exclude>
         <findbugs.threshold>Low</findbugs.threshold>
         <legal.doc.source>.</legal.doc.source>
+        <jakarta.project.version>3.2.6</jakarta.project.version>
     </properties>
 
-    <name>Jakarta Enterprise Beans</name>
+    <name>jboss-jakarta-ejb-api_spec</name>
     <description>Jakarta Enterprise Beans</description>
 
     <url>https://github.com/eclipse-ee4j/ejb-api</url>
@@ -131,6 +132,7 @@
             <plugin>
                 <groupId>org.glassfish.build</groupId>
                 <artifactId>glassfishbuild-maven-plugin</artifactId>
+                <version>3.2.26</version>
                 <executions>
                     <execution>
                         <id>unpack-sources</id>
@@ -198,6 +200,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-remote-resources-plugin</artifactId>
+                <version>1.5</version>
                 <executions>
                   <execution>
                     <goals>
@@ -238,8 +241,8 @@
     <a href="{@docRoot}/doc-files/EFSL.html" target="_top">license terms</a>.]]>
                     </bottom>
                     <docfilessubdirs>true</docfilessubdirs>
-                    <doctitle>Jakarta Enterprise Beans ${project.version} API</doctitle>
-                    <windowtitle>Jakarta Enterprise Beans ${project.version} API</windowtitle>
+                    <doctitle>Jakarta Enterprise Beans ${jakarta.project.version} API</doctitle>
+                    <windowtitle>Jakarta Enterprise Beans ${jakarta.project.version} API</windowtitle>
                 </configuration>
                 <executions>
                     <execution>
@@ -338,7 +341,7 @@
         <dependency>
             <groupId>org.jboss.spec.javax.xml.rpc</groupId>
             <artifactId>jboss-jaxrpc-api_1.1_spec</artifactId>
-            <version>2.0.0.CR1</version>
+            <version>2.0.0.Final</version>
             <optional>true</optional>
         </dependency>
         <dependency>
